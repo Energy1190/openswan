@@ -3,7 +3,7 @@ FROM debian:jessie
 ENV VERSION=2.6.48
 
 RUN apt-get update && \
-	apt-get install -q -y -o \
+	apt-get install -q -y \
 	libgmp3-dev \
 	gawk \
 	flex \
