@@ -13,6 +13,12 @@ RUN apt-get update && \
 	sed \
 	python \
 	wget \
+	make \
+	libgmp-dev \
+	module-init-tools \
+	autoconf \
+	curl \
+	gcc \
  && rm -rf /var/lib/apt/lists/*
  
 RUN wget https://download.openswan.org/openswan/openswan-${VERSION}.tar.gz && \
