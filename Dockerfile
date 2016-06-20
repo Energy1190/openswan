@@ -16,7 +16,7 @@ RUN apt-get update && \
  && rm -rf /var/lib/apt/lists/*
  
 RUN wget https://download.openswan.org/openswan/openswan-${VERSION}.tar.gz && \
-	tar -zxvf openswan-latest.tar.gz -C /usr/src/ && \
+	tar -zxvf openswan-${VERSION}.tar.gz -C /usr/src/ && \
 	rm -f openswan-${VERSION}.tar.gz && \
 	cd /usr/src/openswan-${VERSION} && \
 	make programs && \
